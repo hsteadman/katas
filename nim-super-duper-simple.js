@@ -14,7 +14,7 @@ alert(winner+" won!");
 
 function playerTurn(){
 	var turn=prompt("Count how many? 1-3");
-	if(turn>0&&turn<4) return Number(turn);
+	if((turn>0&&turn<4)&&(Math.floor(turn)==turn)) return Number(turn);
 	else alert("Invalid input. Try again.");
 }
 
